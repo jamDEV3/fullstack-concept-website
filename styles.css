@@ -1,0 +1,174 @@
+/* CSS - This is the additional CSS I used to construct the webpages styles, on top of using Bootstrap. */
+
+/* GENERAL STYLES */
+
+    /* BODY */
+
+        html {
+            min-height: 100vh;
+        }
+
+        /* Font styling */
+
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        body p {
+            font-family: 'Raleway', sans-serif;
+            font-size: 16pt;
+        }
+
+    /* DIV - Header */
+
+        /* Defining header arrangement */
+
+        .header {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+    /* DIV - Navbar */
+
+        /* Nav Spacing */
+
+        .navbar {
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .navbar li {
+            margin-left: 4em;
+            margin-right : 4em;
+            padding: 10px;
+        }
+
+    /* DIV - Carousel */
+
+        /* Carousel items - Using background element to stretch image across for bigger viewports */
+
+        .slide1, .slide2, .slide3 {
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 20px;
+            height: 600px;
+            background-position: 0%, 50%;
+        }
+
+        .slide1 {
+            background-image: url('img/banner_1.jpg');
+        }
+
+        .slide2 {
+            background-image: url('img/banner_2.jpg');
+        }
+
+        .slide3 {
+            background-image: url('img/banner_3.jpg');
+    } 
+
+    /* DIV - Tiles */
+
+        /* Styles for tiles class for a unique look. Using hover elements (link styling is further down the page) to activate the .centered class to display text over the images. */
+
+        .tile {
+            padding: 0;
+        }
+
+        .tile img {
+            width: 100%;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size: 50px;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: rgba(0,0,255,0);
+        }
+
+    /* DIV - Footer */
+
+        /* Simple footer styling, displaying lists in 3 columns. */
+
+        .footer {
+            background-color: #9191A3;
+            padding-top: 100px; 
+            padding-bottom: 100px; 
+            color: white;
+        }
+
+        .footer ul {
+            padding-left: 0;
+        }
+
+        .footer h6 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .footer li {
+            padding: 20px;
+            list-style-type: none;
+            letter-spacing: 2px;
+        }
+
+/* FORMS */
+
+    /* Simple styling for button elements on form. */
+
+.formButton {
+    text-align:center; 
+    width: 100%; 
+    height: 60px;
+    color: white;
+    background-color: #9191A3;
+    border: 2px solid #9191A3;
+    border-radius: 3px;
+}
+
+input {
+    margin-top: 50px;
+}
+
+/* LINKS */
+
+    /* Styling on link elements. Hover elements are used to make the page look less static. */
+
+    a {
+        color: black;
+    }
+
+    a:hover {
+        color: gray;
+        text-decoration: none;
+    }
+
+
+    a:hover img {
+        filter: grayscale();
+    }
+
+    a:hover .centered {
+        color: white;
+    }
+
+    .footer a{
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 1px;
+
+    }
+
+    .formButton:hover {
+        background-color: #b9b9ca;
+        border: 2px solid #b9b9ca;
+    }
+
+    .formButton:active {
+        background-color: #9191A3;
+        border: 2px solid #b9b9ca;
+    }
